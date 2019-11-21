@@ -9,6 +9,7 @@ class Golomb:
         self.m = m
 
     def encode(self, n):
+
         r = n % self.m
         q = n // self.m
 
@@ -33,7 +34,7 @@ class Golomb:
                 break
             q += 1
 
-        temp = bitstream.read_n_bits(q + 1, k - 2)
+        temp = bitstream.read_n_bits(q + 1, k - 1)
         r = int("".join(str(x) for x in temp), 2)
 
         if r < t:
@@ -45,8 +46,8 @@ class Golomb:
 
 
 def main():
-    g = Golomb('test', 5)
-    print(g.encode(15))
+    g = Golomb('test', 150)
+    print(g.encode(255))
     print(g.decode(g.bitstream))
 
 

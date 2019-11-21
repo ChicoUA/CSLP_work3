@@ -29,7 +29,7 @@ class Bitstream:
         return bit
 
     def read_n_bits(self, start, k):
-        return self.bitstream[start:start+k+1]
+        return self.bitstream[start:start+k]
 
     def write_n_bits(self, r, m):
         assert r < m
