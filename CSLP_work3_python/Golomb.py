@@ -41,13 +41,13 @@ class Golomb:
             return q * self.m + r
 
         else:
-            r = r * 2 + int(bitstream.read_one_bit(k + 1))
+            r = r * 2 + int(bitstream.read_one_bit(len(bitstream.bitstream)-1))
             return q * self.m + r - t
 
 
 def main():
-    g = Golomb('test', 150)
-    print(g.encode(255))
+    g = Golomb('test', 4)
+    print(g.encode(3))
     print(g.decode(g.bitstream))
 
 
