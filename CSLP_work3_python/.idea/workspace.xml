@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b1c6cbd0-0251-45f6-b530-4ab52ee4f564" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../CSLP_work3_Cpp/Bitstream.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../CSLP_work3_Cpp/Bitstream.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CSLP_work3_Cpp/Debug/Bitstream.o" beforeDir="false" afterPath="$PROJECT_DIR$/../CSLP_work3_Cpp/Debug/Bitstream.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CSLP_work3_Cpp/Debug/CSLP_work3_Cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../CSLP_work3_Cpp/Debug/CSLP_work3_Cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CSLP_work3_Cpp/Debug/subdir.mk" beforeDir="false" afterPath="$PROJECT_DIR$/../CSLP_work3_Cpp/Debug/subdir.mk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Golomb.py" beforeDir="false" afterPath="$PROJECT_DIR$/Golomb.py" afterDir="false" />
-    </list>
+    <list default="true" id="b1c6cbd0-0251-45f6-b530-4ab52ee4f564" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +35,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Golomb">
+  <component name="RunManager" selected="Python.video_player">
     <configuration name="Bitstream" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="CSLP_work3_python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -108,8 +101,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Golomb" />
         <item itemvalue="Python.video_player" />
+        <item itemvalue="Python.Golomb" />
         <item itemvalue="Python.Bitstream" />
       </list>
     </recent_temporary>

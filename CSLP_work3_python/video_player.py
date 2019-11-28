@@ -14,7 +14,7 @@ class video_player:
             ret, frame = cap.read()
 
             if self.video_format == "RGB":
-                newframe = frame
+                newframe = cv2.cvtColor(frame, cv2.COLOR_YUV2BGR)
             elif self.video_format == "YUV":
                 newframe = cv2.cvtColor(frame, cv2.COLOR_BGR2YUV)
             elif self.video_format == "GRAY":
