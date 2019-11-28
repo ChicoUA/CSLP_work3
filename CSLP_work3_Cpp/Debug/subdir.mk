@@ -4,13 +4,16 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../Bitstream.cpp 
+../Bitstream.cpp \
+../Golomb.cpp 
 
 OBJS += \
-./Bitstream.o 
+./Bitstream.o \
+./Golomb.o 
 
 CPP_DEPS += \
-./Bitstream.d 
+./Bitstream.d \
+./Golomb.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

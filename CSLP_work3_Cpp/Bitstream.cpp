@@ -19,10 +19,8 @@ Bitstream::Bitstream() {
 }
 
 void Bitstream::writeOneBit(int bit){
-	if(bit != 1 and bit != 0){
-		cout << "Bit must be 1 or 0" << "\n";
-		exit(1);
-	}
+
+	bitstream += std::to_string(bit);
 
 }
 
@@ -33,8 +31,7 @@ std::string Bitstream::getBitstream(){
 void Bitstream::writeNBits(int r, int m){
 	double b = log2(m);
 	std::string binr = "";
-
-	if(ceil(b) == floor(m)){
+	if(ceil(b) != floor(b)){
 		int b2 = int(ceil(b));
 			int level = int(pow(2, b2) - m);
 
@@ -56,6 +53,7 @@ void Bitstream::writeNBits(int r, int m){
 			}
 	}
 	else{
+		cout << "hey" << "\n";
 		binr = std::bitset<8>(r).to_string();
 		while(true){
 			if(binr.length() == 1){
@@ -91,16 +89,18 @@ std::string Bitstream::readNBits(int start, int k){
 		exit(1);
 	}
 }
-
-
+/*
 int main(){
 	Bitstream bt;
-
+	bt.writeOneBit(1);
+	cout << bt.getBitstream() << "\n";
+	cout << "hey" << "\n";
 	bt.writeNBits(2, 4);
 	cout << bt.getBitstream() << "\n";
 	cout << bt.readOneBit(0) << "\n";
 	cout << bt.readNBits(0, 2) << "\n";
 
 }
+*/
 
 
